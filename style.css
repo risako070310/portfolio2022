@@ -246,6 +246,40 @@ body{
         margin: 10px 0;
         font-size: 15px;
     }
+    .achievement{
+        margin: 70px 0;
+    }
+    .achieve_card{
+        width: 200px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .achieve_card img{
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    .achieve_card h3{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .achieve_card p{
+        font-size: 12px;
+    }
+    .achieve_card a{
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        color: #303030;
+        display: block;
+        text-align: end;
+    }
+    .achieve_card a span{
+        margin-left: 5px;
+    }
 }
 
 /*スマホ向け*/
@@ -309,6 +343,44 @@ body{
         margin: 10px 0;
         font-size: 15px;
     }
+    .achievement{
+        margin: 70px 0;
+    }
+    .achieve_flex{
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .achieve_card{
+        width: 250px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .achieve_card img{
+        width: 250px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    .achieve_card h3{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .achieve_card p{
+        font-size: 12px;
+    }
+    .achieve_card a{
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        color: #303030;
+        display: block;
+        text-align: end;
+    }
+    .achieve_card a span{
+        margin-left: 5px;
+    }
 }
 
 @media screen and (min-width:1px) and (max-width:350px) {
@@ -332,39 +404,80 @@ body{
     .profile_image{
         width: 70%;
         height: auto;
-        margin: 0 15%;
+        margin: 10px 15%;
+    }
+    .skill{
+        margin-top: 50px;
     }
     .skill_flex{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
     }
     .skill_box{
-        width: 20%;
+        width: 70%;
     }
     .mobile_pie{
-        width: 130px;
-        height: 130px;
-        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
     }
     .web_pie{
-        width: 130px;
-        height: 130px;
-        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
     }
     .design_pie{
-        width: 130px;
-        height: 130px;
-        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
     }
     .movie_pie{
-        width: 130px;
-        height: 130px;
-        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
     }
     .skill p{
         margin: 10px 0;
         font-size: 15px;
+    }
+    .achievement{
+        margin: 70px 0;
+    }
+    .achieve_flex{
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .achieve_card{
+        width: 200px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .achieve_card img{
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    .achieve_card h3{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .achieve_card p{
+        font-size: 12px;
+    }
+    .achieve_card a{
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        color: #303030;
+        display: block;
+        text-align: end;
+    }
+    .achieve_card a span{
+        margin-left: 5px;
     }
 }
