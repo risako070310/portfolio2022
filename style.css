@@ -15,6 +15,51 @@ body{
     color: #303030;
 }
 
+.mobile_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    color: #d97c8d;
+    background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#d97c8d 0% 85%, #c8c8c8 85% 100%);
+    border-radius: 50%;
+}
+.web_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    color: #f0cd54;
+    background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#f0cd54 0% 75%, #c8c8c8 75% 100%);
+    border-radius: 50%;
+}
+.design_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    color: #e69163;
+    background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#e69163 0% 65%, #c8c8c8 65% 100%);
+    border-radius: 50%;
+}
+.movie_pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    color: #aaa6e8;
+    background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#aaa6e8 0% 55%, #c8c8c8 55% 100%);
+    border-radius: 50%;
+}
+
 /*パソコン向け*/
 @media screen and (min-width:961px) {
     .container{
@@ -60,60 +105,24 @@ body{
         width: 25%;
     }
     .mobile_pie{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
         width: 150px;
         height: 150px;
         font-size: 40px;
-        font-weight: 700;
-        color: #d97c8d;
-        background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#d97c8d 0% 85%, #c8c8c8 85% 100%);
-        border-radius: 50%;
     }
     .web_pie{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
         width: 150px;
         height: 150px;
         font-size: 40px;
-        font-weight: 700;
-        color: #f0cd54;
-        background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#f0cd54 0% 75%, #c8c8c8 75% 100%);
-        border-radius: 50%;
     }
     .design_pie{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
         width: 150px;
         height: 150px;
         font-size: 40px;
-        font-weight: 700;
-        color: #e69163;
-        background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#e69163 0% 65%, #c8c8c8 65% 100%);
-        border-radius: 50%;
     }
     .movie_pie{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
         width: 150px;
         height: 150px;
         font-size: 40px;
-        font-weight: 700;
-        color: #aaa6e8;
-        background-image: radial-gradient(#f0f0f0 30%, transparent 31%), conic-gradient(#aaa6e8 0% 55%, #c8c8c8 55% 100%);
-        border-radius: 50%;
     }
     .skill p{
         margin: 10px 0;
@@ -122,12 +131,15 @@ body{
 
 /*タブレット向け*/
 @media screen and (min-width:521px) and (max-width:960px) {
+    h2{
+        font-size: 20px;
+    }
 	.container{
         width: 80%;
         margin: 0 10%;
     }
     .about_flex{
-        margin: 100px 0;
+        margin: 70px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -154,6 +166,40 @@ body{
     .profile_image{
         width: 30%;
         height: auto;
+        margin: 50px 0;
+    }
+    .skill_flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .skill_box{
+        width: 20%;
+    }
+    .mobile_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .web_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .design_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .movie_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .skill p{
+        margin: 10px 0;
+        font-size: 15px;
     }
 }
 
@@ -182,6 +228,42 @@ body{
         height: auto;
         margin: 0 15%;
     }
+    .skill{
+        margin-top: 50px;
+    }
+    .skill_flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .skill_box{
+        width: 40%;
+    }
+    .mobile_pie{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+    .web_pie{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+    .design_pie{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+    .movie_pie{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+    .skill p{
+        margin: 10px 0;
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:1px) and (max-width:350px) {
@@ -206,5 +288,38 @@ body{
         width: 70%;
         height: auto;
         margin: 0 15%;
+    }
+    .skill_flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .skill_box{
+        width: 20%;
+    }
+    .mobile_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .web_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .design_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .movie_pie{
+        width: 130px;
+        height: 130px;
+        font-size: 30px;
+    }
+    .skill p{
+        margin: 10px 0;
+        font-size: 15px;
     }
 }
