@@ -60,6 +60,13 @@ body{
     border-radius: 50%;
 }
 
+.achieve_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
 /*パソコン向け*/
 @media screen and (min-width:961px) {
     .container{
@@ -126,6 +133,44 @@ body{
     }
     .skill p{
         margin: 10px 0;
+    }
+    .achievement{
+        margin: 70px 0;
+    }
+    .achieve_card{
+        width: 250px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .achieve_card img{
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    .achieve_card h3{
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .achieve_card p{
+        font-size: 12px;
+    }
+    .achieve_card a{
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #303030;
+        display: block;
+        text-align: end;
+    }
+    .achieve_card a span{
+        margin-left: 5px;
+    }
+    .achieve_card a:hover span{
+        margin-left: 10px;
+        transition: all .5s ease-out;
     }
 }
 
