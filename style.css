@@ -67,6 +67,13 @@ body{
     align-items: flex-start;
 }
 
+.article_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
 /*パソコン向け*/
 @media screen and (min-width:961px) {
     .container{
@@ -171,6 +178,32 @@ body{
     .achieve_card a:hover span{
         margin-left: 10px;
         transition: all .5s ease-out;
+    }
+    .article_card{
+        width: 150px;
+        margin: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .article_card img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .article_card h3{
+        margin: 5px 0;
+        font-size: 12px;
+        text-decoration: none;
+        border-bottom: none;
+        color: #303030;
+    }
+    .article_flex a{
+        text-decoration: none;
+    }
+    .article_flex a:hover .article_card{
+        opacity: 60%;
     }
 }
 
