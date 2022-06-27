@@ -139,7 +139,7 @@
     color: #303030;
 }
 
-#gloval-nav a:before {
+#gloval-nav .page:before {
     position: absolute;
     content:'';
     top: 0.4em;
@@ -150,7 +150,7 @@
     border-color: transparent transparent transparent #333333;
   }
 
-#gloval-nav a::after {
+#gloval-nav .page::after {
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -163,7 +163,7 @@
     transition: transform 0.3s;
 }
 
-#gloval-nav a:hover::after {
+#gloval-nav .page:hover::after {
     transform: scale(1, 1);
 }
 
@@ -206,11 +206,11 @@ nav ul {
 }
 #gloval-nav .contact {
     text-align: center;
-    display: flex;
     margin-top: 40px;
 }
 
 #gloval-nav .contact a{
+    float: left;
     font-size: 20px;
 }
 
