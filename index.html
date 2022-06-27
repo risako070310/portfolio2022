@@ -16,7 +16,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="header.css" type="text/css">
         <link rel="shortcut icon" href="src/logo/logo.png" >
+
+
+<!--        jqueryの読み込み-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         
 <!--        google fonts, fontawesomeの導入-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +39,32 @@
         <meta name="twitter:card" content="summary" />
     </head>
     <body>
+        <header>
+            <a href="/" class="header_a">
+                <div class="header_left">
+                    <img src="/src/logo/logo.png">
+                    <h1>risako070310</h1>
+                </div>
+            </a>
+            <div id="nav-toggle">
+                <div><span></span><span></span><span></span></div>
+            </div>
+    
+            <div id="gloval-nav">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/works">Works</a></li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <a href="https://github.com/risako070310"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/risako070310"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/risako070310"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </header>
+        
         <div class="container">
             <div class="about_flex">
                 <div class="aboutme">
@@ -132,4 +163,13 @@
             <footer><small class="footer_p">&copy; Risako Kato</small></footer>
         </div>
     </body>
+
+<!--	ハンバーガーメニューのJS読み込み-->
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+            });
+        });
+    </script>
 </html>
