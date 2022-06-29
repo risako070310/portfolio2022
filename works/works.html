@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144247257-9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-144247257-9');
+        </script>
+        
         <title>Works | risako070310</title>
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="../header.css" type="text/css">
         <link rel="shortcut icon" href="src/logo/logo.png" >
+
+<!--        jqueryの読み込み-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         
 <!--        google fonts, fontawesomeの導入-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
            
 <!--        OGPの設定-->
@@ -24,17 +38,63 @@
         <meta name="twitter:card" content="summary" />
     </head>
     <body>
-        <h1>Works</h1>
-        <div>
-            <div>
-                <img src="image/work1.png">
-                <h3>sopomina</h3>
-                <h4>Branding / Goods Design / Web Design</h4>
-                <p>#Adobe illustrator #HTML #css </p>
+        <header>
+            <a href="/" class="header_a">
+                <div class="header_left">
+                    <img src="/src/logo/logo.png">
+                    <h1>risako070310</h1>
+                </div>
+            </a>
+            <div id="nav-toggle">
+                <div><span></span><span></span><span></span></div>
             </div>
-        </div>
-        <div>
-            <h2>🖼Instagram</h2>
+    
+            <div id="gloval-nav">
+                <nav>
+                    <ul>
+                        <li><a href="https://risako073010.com" class="page">Home</a></li>
+                        <li><a href="https://risako070310.com/works" class="page">Works</a></li>
+                        <li>
+                            <div class="contact">
+                                <a href="https://github.com/risako070310"><i class="fab fa-github"></i></a>
+                                <a href="https://twitter.com/risako070310"><i class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com/risako070310"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Works</h1>
+            <div>
+                <div>
+                    <img src="image/work1.png">
+                    <h3>sopomina</h3>
+                    <h4>Branding / Goods Design / Web Design</h4>
+                    <p>#Adobe illustrator #HTML #css </p>
+                </div>
+            </div>
+            <div>
+                <h2>🖼Instagram</h2>
+            </div>
+
+            <div class="contact" style="margin-top: 70px;">
+                <a href="https://github.com/risako070310"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/risako070310"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/risako070310"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <footer><small class="footer_p">&copy; Risako Kato</small></footer>
         </div>
     </body>
+
+<!--	ハンバーガーメニューのJS読み込み-->
+    <script type="text/javascript">
+        $(function () {
+            $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+            });
+        });
+    </script>
 </html>
