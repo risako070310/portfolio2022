@@ -27,6 +27,14 @@ body{
     margin: 10px;
 }
 
+.contact a:hover{
+    opacity: 0.6;
+}
+
+.instagram_box img:hover{
+    opacity: 0.6;
+}
+
 footer{
     text-align: center;
     margin-bottom: 5px;
@@ -78,6 +86,22 @@ footer{
     }
     .works_card p{
         font-size: 12px;
+    }
+
+    .instagram{
+        margin: 80px calc((100% - 630px) / 2);
+        width: 630px;
+    }
+
+    .instagram_box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 630px;
+        margin: 20px 0;
+    }
+    .instagram_box img{
+        width: 200px;
+        margin: 5px;
     }
 }
 
