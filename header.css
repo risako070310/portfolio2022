@@ -2,6 +2,7 @@
     text-decoration: none;
 }
 .header_left{
+    z-index: 1000;
     position: fixed;
     top: 30px;
     left: 15%;

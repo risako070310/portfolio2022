@@ -31,13 +31,80 @@ body{
     opacity: 0.6;
 }
 
+.works_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .instagram_box img:hover{
     opacity: 0.6;
+}
+.instagram_box{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer{
     text-align: center;
     margin-bottom: 5px;
+}
+
+.work1{
+    background-color: #fff;
+}
+
+.work2{
+    background-color: #273573;
+}
+
+.work3{
+    background-color: #49C69C;
+}
+
+.work4{
+    background-color: #e6e6e6;
+}
+
+.work5{
+    background-image: url(image/work5-bg.jpeg);
+    background-color:rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+}
+
+.work6{
+    background-image: url(image/work6-bg.png);
+    background-color:rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+}
+
+.work7{
+    background-image: url(image/work7-bg.png);
+    background-color:rgba(0, 0, 0,0.3);
+    background-blend-mode: darken;
+}
+
+.work8{
+    background-color: #0b0b51;
+}
+
+.work9{
+    background-image: url(image/work9-bg.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-color:rgba(0, 0, 0,0.3);
+    background-blend-mode: darken;
+}
+
+.work10{
+    background-image: url(image/work10-bg.png);
+    background-color:rgba(255, 255, 255, 0.15);
+    background-blend-mode: lighten;
+}
+
+.work11{
+    background-image: url(image/work11-bg.png);
+    background-size: 300px;
 }
 
 /*パソコン向け*/
@@ -47,19 +114,26 @@ footer{
         margin: 0 15%;
         padding-top: 100px;
     }
+    .works_flex a{
+        text-decoration: none;
+        color: #303030;
+    }
     .works_card{
-        width: 250px;
+        width: 270px;
         margin: 10px;
         border-radius: 16px;
         box-shadow: 0 0 2px 0 #c0c0c0;
         padding: 10px;
     }
     .works_img{
-        width: 250px;
-        height: 140px;
+        width: 270px;
+        height: 150px;
         border-radius: 14px;
         position: relative;
         overflow: hidden;
+        background-size: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .works_img img{
         width: 100%;
@@ -94,14 +168,16 @@ footer{
     }
 
     .instagram_box{
-        display: flex;
-        flex-wrap: wrap;
         width: 630px;
         margin: 20px 0;
     }
     .instagram_box img{
         width: 200px;
         margin: 5px;
+    }
+
+    .blank_card{
+        box-shadow: none;
     }
 }
 
