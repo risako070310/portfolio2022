@@ -257,15 +257,147 @@ footer{
 
 /*スマホ向け*/
 @media screen and (min-width:351px) and (max-width:520px) {
-	.container{
+    .container{
         width: 80%;
         margin: 0 10%;
+        padding-top: 100px;
+    }
+    .works_flex a{
+        text-decoration: none;
+        color: #303030;
+    }
+    .works_card{
+        width: 240px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .works_img{
+        width: 240px;
+        height: 140px;
+        border-radius: 14px;
+        position: relative;
+        overflow: hidden;
+        background-size: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .works_img img{
+        width: 100%;
+        position: absolute;
+        transform: scale(1.2);
+        transition: transform .4s ease-in-out, top .3s ease;
+    }
+    .works_card:hover img{
+        transform: scale(1.0);
+    }
+    .works_card h3{
+        margin-top: 8px;
+    }
+    .works_card span{
+        height: 1px;
+        background-color: #303030;
+        display: block;
+        opacity: 0.4;
+        margin-bottom: 10px;
+    }
+    .works_card h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .works_card p{
+        font-size: 12px;
+    }
+
+    .instagram{
+        margin: 80px calc((100% - 340px) / 2);
+        width: 340px;
+    }
+
+    .instagram_box{
+        width: 340px;
+        margin: 20px 0;
+    }
+    .instagram_box img{
+        width: 160px;
+        margin: 5px;
+    }
+
+    .blank_card{
+        box-shadow: none;
     }
 }
 
 @media screen and (min-width:1px) and (max-width:350px) {
-	.container{
+    .container{
         width: 80%;
         margin: 0 10%;
+        padding-top: 100px;
+    }
+    .works_flex a{
+        text-decoration: none;
+        color: #303030;
+    }
+    .works_card{
+        width: 240px;
+        margin: 10px;
+        border-radius: 16px;
+        box-shadow: 0 0 2px 0 #c0c0c0;
+        padding: 10px;
+    }
+    .works_img{
+        width: 240px;
+        height: 140px;
+        border-radius: 14px;
+        position: relative;
+        overflow: hidden;
+        background-size: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .works_img img{
+        width: 100%;
+        position: absolute;
+        transform: scale(1.2);
+        transition: transform .4s ease-in-out, top .3s ease;
+    }
+    .works_card:hover img{
+        transform: scale(1.0);
+    }
+    .works_card h3{
+        margin-top: 8px;
+    }
+    .works_card span{
+        height: 1px;
+        background-color: #303030;
+        display: block;
+        opacity: 0.4;
+        margin-bottom: 10px;
+    }
+    .works_card h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .works_card p{
+        font-size: 12px;
+    }
+
+    .instagram{
+        margin: 80px calc((100% - 260px) / 2);
+        width: 260px;
+    }
+
+    .instagram_box{
+        width: 260px;
+        margin: 20px 0;
+    }
+    .instagram_box img{
+        width: 120px;
+        margin: 5px;
+    }
+
+    .blank_card{
+        box-shadow: none;
     }
 }
